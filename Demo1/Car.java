@@ -13,29 +13,40 @@ public class Car {
         // turnOffLight();
         Car rainbowCar = new Car();
         rainbowCar.size = 999;
-        rainbowCar.color = "rainbow";
+        rainbowCar.color = "Rainbow";
         rainbowCar.model ="Unicon";
+
+        Car whiteCar = new Car();
+        whiteCar.size = 888;
+        whiteCar.color = "White";
+        whiteCar.model ="Aboutyou";
 
         System.out.println("Car size : " + rainbowCar.size);
         System.out.println("Car color : " + rainbowCar.color);
         System.out.println("Car model : " + rainbowCar.model);
+        rainbowCar.turnOnLight();
+
+        System.out.println("Car size : " + whiteCar.size);
+        System.out.println("Car color : " + whiteCar.color);
+        System.out.println("Car model : " + whiteCar.model);
+        whiteCar.turnOffLight();
     }
 
     /* Methods */
     
-	public static void moveForward(){
-		System.out.println("moveForward");
+	public void moveForward(){
+		System.out.println(this.color + "moveForward");
     }
-    public static void moveBackward(){
+    public void moveBackward(){
 		System.out.println("moveBackward");
     }
-    public static void stop(){
+    public void stop(){
 		System.out.println("stop");
     }
-    public static void turnOnLight(){
-		System.out.println("turnOnLight");
+    public void turnOnLight(){
+		System.out.println(this.color + " : turnOnLight");
     }
-    public static void turnOffLight(){
-		System.out.println("turnOffLight");
+    public void turnOffLight(){
+		System.out.println(this.color + " : turnOffLight");
     }
 }
