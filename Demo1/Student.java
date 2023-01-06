@@ -1,10 +1,12 @@
 public class Student {
     /* Attribute */
+    
     public String name;
     public int age;
     public String group;
 
     /* Main Method */
+
     public static void main(String[] args) {
 
         Student oneStudent = new Student();
@@ -22,7 +24,7 @@ public class Student {
         // oneStudent.printName();
         // oneStudent.printAge();
         // oneStudent.printGroup();
-        System.out.println("--------------------------");
+        System.out.println("-----------------------------------------------");
         oneStudent.setData("Sompong",16,"66/45");
         oneStudent.getData();
     }
@@ -35,6 +37,8 @@ public class Student {
     public void getData() {
         System.out.println(this.name + " is " + this.age + " years old and is in group " + this.group);
     }
+
+     /* Methods */
 
         public void printName(){
             System.out.println("Student name:\t" + this.name);
