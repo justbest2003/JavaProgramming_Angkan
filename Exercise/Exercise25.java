@@ -9,7 +9,7 @@ public class Exercise25 {
         double height = input.nextDouble();
         double h = (height / 100);
         double bmi = weigth / (h * h);
-        System.out.print("your bmi is : " + bmi);
+        System.out.print("Your bmi is : " + bmi);
 
         String status = " ";
         if (bmi >= 30)
