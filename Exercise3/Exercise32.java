@@ -11,3 +11,20 @@ public class Exercise32 {
         System.out.println("Your number is " + number);
     }
 }
+
+// System.out.print("Enter the number : "); number = input.nextInt();
+        // while(number <= 0){ System.out.print("Enter the number : "); number =
+        // input.nextInt();
+
+        // }
+        // System.out.println("Your number is : " + number);
+        // System.out.println(" ---------------------------- ");
+
+        // System.out.print("Enter the number : ");
+        // number = input.nextInt();
+        // for(;number <= 0;){
+        // System.out.print("Enter the number : ");
+        // number = input.nextInt();
+        // }
+        // System.out.println("Your number is : " + number);
+        // System.out.println(" ---------------------------- ");
