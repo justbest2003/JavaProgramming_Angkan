@@ -37,9 +37,9 @@ public class Student {
         System.out.println("After register");
         std1.printStudent();
         if (std1.login("Angkan", "123456789")) {
-            System.out.println("Login Successful");
+            System.out.println("Login Successful !");
         } else {
-            System.out.println("Login Failed");
+            System.out.println("Login Failed !");
         }
 
         Student std2 = new Student();
