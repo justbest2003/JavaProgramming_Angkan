@@ -62,6 +62,38 @@ public class Exercise6 {
         System.out.println("is Odd");
     }
 
+    public void isDivideBy(int num, Scanner input) {
+        System.out.print("Please enter number(N) : ");
+        int n = input.nextInt();
+        System.out.print("Please enter number(X) : ");
+        int x = input.nextInt();
+        String sum = "";
+        for (int i = 1; i <= n; i++) {
+          if (i % x == 0) {
+            if (sum == "") {
+              sum = sum + i;
+            } else {
+              sum = sum + "," + i;
+            }
+          }
+        }
+        System.out.println(sum);
+      }
+
+      public void printStarAdvance(int num, Scanner input) {
+        System.out.print("Please enter number : ");
+        int n = input.nextInt();
+        String star = "*";
+        System.out.println(star);
+        for (int i = 1; i <= n; i++) {
+          for (i = 1; i < n; i++) {
+            star += "_";
+            System.out.println(star + "*");
+          }
+        }
+      }
+    
+
     // Ex 1 - 2
     // public static void main(String[] args) {
     // Exercise6 ex = new Exercise6();
@@ -100,9 +132,25 @@ public class Exercise6 {
     // ex.isPositive(num, input);
     // }
 
+    
+    //Ex 6
+    // public static void main(String[] args) {
+    //     Exercise6 ex = new Exercise6();
+    //     Scanner input = new Scanner(System.in);
+    //     ex.isOdd(0, input);
+    // }
+
+    //Ex 7
+    // public static void main(String[] args) {
+    // Exercise6 ex = new Exercise6();
+    // Scanner input = new Scanner(System.in);
+    // ex.isDivideBy(0, input);
+    // }
+
+    //Ex 8
     public static void main(String[] args) {
         Exercise6 ex = new Exercise6();
         Scanner input = new Scanner(System.in);
-        ex.isOdd(0, input);
+        ex.printStarAdvance(0, input);
     }
-}
+  }
